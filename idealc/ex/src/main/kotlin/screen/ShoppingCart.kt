@@ -17,8 +17,9 @@ class ShoppingCart {
                     prefix = """
                         ***=============================***
                             장바구니에 담긴 상품 목록입니다.
+                
                     """.trimIndent()
-                        ){product ->"\n카테고리: ${product.categoryLabel} / 상품명: ${product.name} / 수량: ${products[product]}"
+                        ){product ->"카테고리: ${product.categoryLabel} / 상품명: ${product.name} / 수량: ${products[product]}"
 
                 }
             )
